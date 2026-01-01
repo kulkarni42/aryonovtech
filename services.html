@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Industrial Engineering Services | Aryonova Tech</title>
+    <meta name="description" content="Precision engineering services for 2025. Specializing in LabVIEW HMI development, industrial web ecosystems, autonomous mobile robotics, and infrastructure systems.">
+    <meta name="keywords" content="HMI Development, LabVIEW Pune, Qt C++, Industrial IoT, Mobile Robotics, PLC Logic, Robotics Engineering India">
+    
+    <meta property="og:title" content="Engineering Expertise | Aryonova Tech">
+    <meta property="og:description" content="From raw hardware to intelligent execution. Explore our automation and robotics capabilities.">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
+        .mono { font-family: 'JetBrains+Mono', monospace; }
+        .tech-card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .tech-card:hover { border-color: #38bdf8; background: rgba(56, 189, 248, 0.05); transform: translateY(-5px); }
+        .text-gradient { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Active Link Styling */
+        .nav-link-active { color: #38bdf8 !important; }
+    </style>
+</head>
+<body class="bg-slate-950">
+
+    <nav class="p-6 border-b border-slate-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tighter uppercase">
+            ARYONOVA<span class="text-sky-400">TECH</span>
+        </div>
+
+        <div class="hidden md:flex space-x-6 text-xs font-bold uppercase tracking-widest text-slate-400">
+            <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+            <a href="about.html" class="hover:text-sky-400 transition">About</a>
+            <a href="services.html" class="nav-link-active">Services</a>
+            <a href="contact.html" class="border border-sky-400/30 px-3 py-1 rounded hover:bg-sky-400/10 transition">Contact</a>
+        </div>
+
+        <button id="mobileMenuBtn" class="md:hidden text-sky-400 text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden absolute left-0 right-0 top-[73px] bg-slate-950 border-b border-slate-800 p-6 space-y-6 flex flex-col shadow-2xl">
+        <a href="index.html" class="text-sm font-bold uppercase text-slate-400">Home</a>
+        <a href="about.html" class="text-sm font-bold uppercase text-slate-400">About</a>
+        <a href="services.html" class="text-sm font-bold uppercase text-sky-400">Services</a>
+        <a href="contact.html" class="text-sm font-bold uppercase text-slate-400">Contact</a>
+    </div>
+</nav>
+
+<button id="scrollTopBtn" class="fixed bottom-8 right-8 z-50 p-4 bg-slate-900 border border-sky-500/30 text-sky-400 rounded-full shadow-2xl transition-all duration-300 opacity-0 translate-y-10 hover:bg-sky-500 hover:text-slate-950">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Scroll to Top Logic
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.style.opacity = "1";
+            scrollTopBtn.style.transform = "translateY(0)";
+        } else {
+            scrollTopBtn.style.opacity = "0";
+            scrollTopBtn.style.transform = "translateY(40px)";
+        }
+    };
+
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+</script>
+
+    <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto">
+        <div class="mono text-sky-400 text-sm mb-4 uppercase tracking-[0.3em]">Technical Capabilities // 2025 Roadmap</div>
+        <h1 class="text-4xl md:text-6xl font-bold mb-10 text-white">Our <span class="text-gradient">Expertise.</span></h1>
+        
+        <div class="max-w-4xl border-l-2 border-sky-500 pl-8 py-4 bg-slate-900/20">
+            <p class="text-xl md:text-2xl text-slate-300 leading-relaxed font-light italic">
+                Bridging the gap between raw hardware and intelligent execution. Aryonova Tech provides end-to-end engineering services that transform complex industrial challenges into streamlined, high-performance systems.
+            </p>
+        </div>
+    </section>
+
+    <section class="py-12 px-6 max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="tech-card border border-slate-800 p-8 rounded-2xl bg-slate-900/10">
+                <div class="text-sky-500 text-3xl mb-6"><i class="fa-solid fa-microchip"></i></div>
+                <h3 class="text-2xl font-bold mb-4 text-white uppercase tracking-wider">Industrial Automation</h3>
+                <ul class="text-slate-400 space-y-4 text-sm leading-relaxed">
+                    <li><strong class="text-slate-200 uppercase text-[10px] block mb-1">HMI Development</strong> High-precision LabVIEW and Qt/C++ interfaces.</li>
+                    <li><strong class="text-slate-200 uppercase text-[10px] block mb-1">Data Acquisition</strong> Real-time DAQ systems and sensor fusion.</li>
+                    <li><strong class="text-slate-200 uppercase text-[10px] block mb-1">Control Logic</strong> Robust PLC-based architectures.</li>
+                </ul>
+            </div>
+
+            <div class="tech-card border border-slate-800 p-8 rounded-2xl bg-slate-900/10">
+                <div class="text-sky-500 text-3xl mb-6"><i class="fa-solid fa-code-branch"></i></div>
+                <h3 class="text-2xl font-bold mb-4 text-white uppercase tracking-wider">Digital Ecosystems</h3>
+                <ul class="text-slate-400 space-y-4 text-sm leading-relaxed">
+                    <li><strong class="text-slate-200 uppercase text-[10px] block mb-1">Industrial Web Apps</strong> Cloud-integrated dashboards for remote monitoring.</li>
+                    <li><strong class="text-slate-200 uppercase text-[10px] block mb-1">Android Platforms</strong> Custom interfaces for rugged industrial tablets.</li>
+                    <li><strong class="text-slate-200 uppercase text-[10px] block mb-1">Connectivity</strong> Secure API bridges for physical sensors.</li>
+                </ul>
+            </div>
+
+            <div class="tech-card border-2 border-sky-500/50 bg-sky-500/10 p-8 rounded-2xl shadow-2xl shadow-sky-500/5">
+                <div class="text-sky-400 text-3xl mb-6"><i class="fa-solid fa-robot"></i></div>
+                <h3 class="text-2xl font-bold mb-4 text-white uppercase tracking-wider">Robotics & AI</h3>
+                <ul class="text-sky-200/70 space-y-4 text-sm leading-relaxed">
+                    <li><strong class="text-white uppercase text-[10px] block mb-1">Mobile Robotics</strong> R&D for autonomous aerial and ground vehicle systems.</li>
+                    <li><strong class="text-white uppercase text-[10px] block mb-1">Machine Learning</strong> Predictive maintenance and computer vision.</li>
+                    <li><strong class="text-white uppercase text-[10px] block mb-1">Infrastructure Tech</strong> Smart city and industrial system support logic.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="mono text-sky-400 text-xs font-bold uppercase tracking-[0.3em] mb-4">Engagement Protocol</h2>
+                <h3 class="text-3xl font-bold text-white uppercase tracking-widest">Questions & Insight</h3>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="border border-slate-800 p-6 rounded-xl bg-slate-900/20">
+                    <h4 class="text-white font-bold mb-2">How do you handle data security and IP protection?</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Security is our priority. We sign standard NDAs before any technical data exchange and use isolated, encrypted environments for development.</p>
+                </div>
+
+                <div class="border border-slate-800 p-6 rounded-xl bg-slate-900/20">
+                    <h4 class="text-white font-bold mb-2">Can you integrate with existing legacy hardware?</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed">Yes. We specialize in bridging modern AI and Web interfaces with legacy PLCs, CNC machines, and specialized industrial sensors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 text-center border-t border-slate-900">
+        <h2 class="text-2xl font-bold mb-6 uppercase tracking-widest">Need a Technical Solution?</h2>
+        <a href="contact.html" class="bg-sky-500 hover:bg-sky-400 text-black px-10 py-4 rounded font-bold uppercase tracking-widest transition shadow-lg shadow-sky-500/20">
+            Discuss Your Brief
+        </a>
+    </section>
+
+    <footer class="py-12 border-t border-slate-900 text-center text-slate-600 text-sm bg-black">
+        <div class="mb-4 text-slate-300 font-bold uppercase tracking-widest">Aryonova Tech</div>
+        <p>Pune | Chh. Sambhajinagar, Maharashtra, India</p>
+        <p class="mt-4 opacity-50 uppercase tracking-tighter text-[10px]">&copy; 2025. All Rights Reserved. Engineered for Precision.</p>
+    </footer>
+
+</body>
+</html>

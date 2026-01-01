@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>About Us | Aryonova Tech - Engineering the Future</title>
+    <meta name="description" content="Discover Aryonova Tech's journey from industrial automation in 2018 to AI-driven robotics and infrastructure systems in 2025. Over 30 years of engineering network expertise based in Maharashtra.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=JetBrains+Mono&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #f8fafc; scroll-behavior: smooth; }
+        .mono { font-family: 'JetBrains+Mono', monospace; }
+        .text-gradient { background: linear-gradient(90deg, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .nav-link-active { color: #38bdf8 !important; }
+        .hub-card { border: 1px solid rgba(56, 189, 248, 0.1); background: rgba(15, 23, 42, 0.3); transition: all 0.3s ease; }
+        .hub-card:hover { border-color: #38bdf8; background: rgba(15, 23, 42, 0.6); }
+    </style>
+</head>
+<body class="bg-slate-950">
+
+<nav class="p-6 border-b border-slate-800 bg-black/50 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+        <div class="text-xl font-bold tracking-tighter uppercase">
+            ARYONOVA<span class="text-sky-400">TECH</span>
+        </div>
+
+        <div class="hidden md:flex space-x-6 text-xs font-bold uppercase tracking-widest text-slate-400">
+            <a href="index.html" class="hover:text-sky-400 transition">Home</a>
+            <a href="about.html" class="nav-link-active transition">About</a>
+            <a href="services.html" class="hover:text-sky-400 transition">Services</a>
+            <a href="contact.html" class="border border-sky-400/30 px-3 py-1 rounded hover:bg-sky-400/10 transition">Contact</a>
+        </div>
+
+        <button id="mobileMenuBtn" class="md:hidden text-sky-400 text-2xl focus:outline-none">
+            <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden absolute left-0 right-0 top-[73px] bg-slate-950 border-b border-slate-800 p-6 space-y-6 flex flex-col shadow-2xl">
+        <a href="index.html" class="text-sm font-bold uppercase text-slate-400">Home</a>
+        <a href="about.html" class="text-sm font-bold uppercase text-sky-400">About</a>
+        <a href="services.html" class="text-sm font-bold uppercase text-slate-400">Services</a>
+        <a href="contact.html" class="text-sm font-bold uppercase text-slate-400">Contact</a>
+    </div>
+</nav>
+
+<button id="scrollTopBtn" class="fixed bottom-8 right-8 z-50 p-4 bg-slate-900 border border-sky-500/30 text-sky-400 rounded-full shadow-2xl transition-all duration-300 opacity-0 translate-y-10 hover:bg-sky-500 hover:text-slate-950">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script>
+    const menuBtn = document.getElementById('mobileMenuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => { mobileMenu.classList.toggle('hidden'); });
+
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+    window.onscroll = function() {
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            scrollTopBtn.style.opacity = "1"; scrollTopBtn.style.transform = "translateY(0)";
+        } else {
+            scrollTopBtn.style.opacity = "0"; scrollTopBtn.style.transform = "translateY(40px)";
+        }
+    };
+    scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+</script>
+
+    <section class="py-24 px-6 max-w-4xl mx-auto">
+        <div class="mono text-sky-400 text-sm mb-4 uppercase tracking-widest">Company Profile // History & Vision</div>
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-12 text-white leading-tight">Engineering with <span class="text-gradient">Precision.</span></h1>
+        
+        <div class="bg-slate-900/40 border border-slate-800 p-8 md:p-12 rounded-2xl shadow-2xl mb-12">
+            <p class="text-xl leading-relaxed text-slate-300 mb-8">
+                Aryonova Tech is built on a foundation of technical precision and industrial-grade reliability. Since 2018, I have operated at the intersection of hardware and software, delivering high-performance solutions in web applications, Android platforms, and industrial automation.
+            </p>
+
+            <p class="text-xl leading-relaxed text-slate-300 mb-8">
+                My approach combines modern innovation with veteran wisdom; I collaborate with a network of brilliant engineering minds boasting over 30 years of experience in electrical, electronics, and software engineering across both industrial and critical infrastructure sectors.
+            </p>
+
+            <div class="border-l-4 border-sky-500 pl-6 my-10">
+                <p class="text-xl leading-relaxed text-white font-medium">
+                    Since 2023, Aryonova Tech has expanded into complex automated infrastructure systems, and as of 2025, we are leading the charge in robotics through AI-driven mobile automation and machine learning integration.
+                </p>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl text-center">
+                <div class="text-3xl font-bold text-sky-400 mb-1">2018</div>
+                <div class="text-[10px] uppercase text-slate-500 font-bold tracking-widest">Est. Operations</div>
+            </div>
+            <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl text-center">
+                <div class="text-3xl font-bold text-sky-400 mb-1">30+</div>
+                <div class="text-[10px] uppercase text-slate-500 font-bold tracking-widest">Exp. Network</div>
+            </div>
+            <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl text-center">
+                <div class="text-3xl font-bold text-sky-400 mb-1">2023</div>
+                <div class="text-[10px] uppercase text-slate-500 font-bold tracking-widest">Infra Expansion</div>
+            </div>
+            <div class="p-6 bg-slate-900 border border-slate-800 rounded-xl text-center">
+                <div class="text-3xl font-bold text-sky-400 mb-1">2025</div>
+                <div class="text-[10px] uppercase text-slate-500 font-bold tracking-widest">AI Robotics</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-black/40 border-y border-slate-900 px-6">
+        <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-6 uppercase tracking-tight">Our Mission</h2>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    To architect the bridge between hardware and intelligence. We believe technology should not replace human intuition, but amplify it. By merging advanced robotics with AI, we empower industries to overcome physical and cognitive limits with zero-margin-for-error synchronization.
+                </p>
+            </div>
+            <div class="hidden md:block w-px h-32 bg-slate-800"></div>
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-6 uppercase tracking-tight">The Vision</h2>
+                <p class="text-slate-400 leading-relaxed text-sm">
+                    To become the global standard for industrial autonomy, where every machine is an intelligent partner, and every system is engineered for a legacy of reliability.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-900/10 px-6">
+        <div class="max-w-4xl mx-auto">
+            <div class="mono text-sky-400 text-xs mb-4 uppercase tracking-widest text-center underline underline-offset-8">Operational Presence</div>
+            <h2 class="text-3xl font-bold text-white text-center mb-12 uppercase tracking-tight">Strategic Hubs</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="hub-card p-8 rounded-2xl relative overflow-hidden">
+                    <div class="text-sky-400 mb-4">
+                        <i class="fa-solid fa-building-shield text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase tracking-wide">Main Office (HQ)</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        127-Gandhinagar Railway station road,<br> 
+                        Chh. Sambhajinagar, Maharashtra 431005
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/917720934920" class="text-slate-500 hover:text-green-500 transition text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="text-slate-500 hover:text-sky-500 transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="hub-card p-8 rounded-2xl">
+                    <div class="text-sky-400 mb-4">
+                        <i class="fa-solid fa-microchip text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2 uppercase tracking-wide">Pune Operations</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        R&D Hub & Remote Operations,<br> 
+                        Chinchwad, Pune, Maharashtra 411033
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://wa.me/917720934920" class="text-slate-500 hover:text-green-500 transition text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#" class="text-slate-500 hover:text-sky-500 transition text-xl"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 text-center text-slate-600 text-sm bg-black border-t border-slate-900">
+        <div class="mb-4 text-slate-300 font-bold uppercase tracking-widest">Aryonova Tech</div>
+        <p class="opacity-50 uppercase tracking-tighter text-[10px]">&copy; 2025 Aryonova Tech. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
