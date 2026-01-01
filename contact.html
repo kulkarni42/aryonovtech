@@ -229,11 +229,20 @@
         function closeSuccess() {
             document.getElementById('successMessage').style.display = 'none';
             document.getElementById('contactForm').reset();
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+    // Show the popup
+    document.getElementById('successMessage').style.display = 'flex';
+    
+    // Note: Do NOT use e.preventDefault() here if you want 
+    // the simple version to work.
+});
         }
     </script>
 </body>
 
 </html>
+
 
 
 
