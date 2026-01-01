@@ -144,73 +144,73 @@
             </div>
 
             <div class="lg:col-span-8 bg-slate-900/20 border border-slate-900 p-8 md:p-12 rounded-3xl">
-                <form id="contactForm" action="https://formspree.io/f/aryonovatech@gmail.com" method="POST" id="contactForm" class="space-y-10">
-                
-                    <div class="border-b border-slate-800 pb-8 mb-8">
-                        <h2 class="text-2xl font-bold text-white mb-2 uppercase tracking-tight">Initialize Project Brief</h2>
-                        <p class="text-slate-500 text-sm">Please provide detailed technical requirements for a deeper consultation.</p>
-                    </div>
+                <form id="contactForm" action="INSERT_YOUR_COPIED_GOOGLE_SCRIPT_URL_HERE" method="POST" class="space-y-10">
+    
+    <div class="border-b border-slate-800 pb-8 mb-8">
+        <h2 class="text-2xl font-bold text-white mb-2 uppercase tracking-tight">Initialize Project Brief</h2>
+        <p class="text-slate-500 text-sm">Please provide detailed technical requirements for a deeper consultation.</p>
+    </div>
 
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Full Name</label>
-                            <input type="text" placeholder="POC Name" class="w-full p-4 rounded-xl" required>
-                        </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Company</label>
-                            <input type="text" placeholder="Organization" class="w-full p-4 rounded-xl" required>
-                        </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Email</label>
-                            <input type="email" placeholder="work@domain.com" class="w-full p-4 rounded-xl" required>
-                        </div>
-                        <div class="space-y-2">
-                            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Phone</label>
-                            <input type="tel" placeholder="+91" class="w-full p-4 rounded-xl" required>
-                        </div>
-                    </div>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Full Name</label>
+            <input type="text" name="full_name" placeholder="POC Name" class="w-full p-4 rounded-xl" required>
+        </div>
+        <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Company</label>
+            <input type="text" name="org_name" placeholder="Organization" class="w-full p-4 rounded-xl" required>
+        </div>
+        <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Email</label>
+            <input type="email" name="user_email" placeholder="work@domain.com" class="w-full p-4 rounded-xl" required>
+        </div>
+        <div class="space-y-2">
+            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Phone</label>
+            <input type="tel" name="user_phone" placeholder="+91" class="w-full p-4 rounded-xl" required>
+        </div>
+    </div>
 
-                    <div class="space-y-4">
-                        <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Inquiry Categories</label>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
-                                <input type="checkbox" class="accent-sky-500"> <span>Industrial Automation / LabVIEW</span>
-                            </label>
-                            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
-                                <input type="checkbox" class="accent-sky-500"> <span>Embedded Systems (HW/SW)</span>
-                            </label>
-                            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
-                                <input type="checkbox" class="accent-sky-500"> <span>Mobile Robotics / Autonomy</span>
-                            </label>
-                            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
-                                <input type="checkbox" class="accent-sky-500"> <span>AI & Machine Learning</span>
-                            </label>
-                        </div>
-                    </div>
+    <div class="space-y-4">
+        <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Inquiry Categories</label>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
+                <input type="checkbox" name="cat_automation" class="accent-sky-500"> <span>Industrial Automation / LabVIEW</span>
+            </label>
+            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
+                <input type="checkbox" name="cat_embedded" class="accent-sky-500"> <span>Embedded Systems (HW/SW)</span>
+            </label>
+            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
+                <input type="checkbox" name="cat_robotics" class="accent-sky-500"> <span>Mobile Robotics / Autonomy</span>
+            </label>
+            <label class="flex items-center space-x-3 text-xs text-slate-400 bg-slate-950/50 p-3 rounded-lg border border-slate-800 cursor-pointer hover:border-sky-500/50 transition">
+                <input type="checkbox" name="cat_ai" class="accent-sky-500"> <span>AI & Machine Learning</span>
+            </label>
+        </div>
+    </div>
 
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center">
-                            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Project Brief *</label>
-                            <div class="flex space-x-4 text-[10px] text-slate-600 font-bold uppercase">
-                                <label><input type="radio" name="stage" class="accent-sky-500"> Concept</label>
-                                <label><input type="radio" name="stage" class="accent-sky-500"> D&D</label>
-                                <label><input type="radio" name="stage" class="accent-sky-500"> Scaling</label>
-                            </div>
-                        </div>
-                        <textarea rows="5" placeholder="Describe the problem you are solving or the system requirements you need to meet." class="w-full p-5 rounded-2xl" required></textarea>
-                    </div>
+    <div class="space-y-4">
+        <div class="flex justify-between items-center">
+            <label class="text-[10px] font-bold uppercase text-slate-500 tracking-widest ml-1">Project Brief *</label>
+            <div class="flex space-x-4 text-[10px] text-slate-600 font-bold uppercase">
+                <label><input type="radio" name="stage" value="Concept" class="accent-sky-500"> Concept</label>
+                <label><input type="radio" name="stage" value="D&D" class="accent-sky-500"> D&D</label>
+                <label><input type="radio" name="stage" value="Scaling" class="accent-sky-500"> Scaling</label>
+            </div>
+        </div>
+        <textarea name="message_brief" rows="5" placeholder="Describe the problem..." class="w-full p-5 rounded-2xl" required></textarea>
+    </div>
 
-                    <div class="pt-4 flex flex-col md:flex-row items-center gap-6">
-                        <button type="submit" class="w-full md:w-auto bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold px-12 py-5 rounded-2xl transition uppercase tracking-widest shadow-xl shadow-sky-500/20">
-                            Request Consultation
-                        </button>
-                        <div class="flex items-center space-x-3 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                            <span>NDA Required?</span>
-                            <label class="text-slate-300"><input type="radio" name="nda" class="accent-sky-500"> Yes</label>
-                            <label class="text-slate-300"><input type="radio" name="nda" class="accent-sky-500"> No</label>
-                        </div>
-                    </div>
-                </form>
+    <div class="pt-4 flex flex-col md:flex-row items-center gap-6">
+        <button type="submit" class="w-full md:w-auto bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold px-12 py-5 rounded-2xl transition uppercase tracking-widest shadow-xl shadow-sky-500/20">
+            Request Consultation
+        </button>
+        <div class="flex items-center space-x-3 text-[10px] text-slate-500 font-bold uppercase tracking-widest">
+            <span>NDA Required?</span>
+            <label class="text-slate-300"><input type="radio" name="nda_status" value="Yes" class="accent-sky-500"> Yes</label>
+            <label class="text-slate-300"><input type="radio" name="nda_status" value="No" class="accent-sky-500"> No</label>
+        </div>
+    </div>
+</form>
             </div>
         </div>
     </section>
@@ -234,3 +234,4 @@
 </body>
 
 </html>
+
